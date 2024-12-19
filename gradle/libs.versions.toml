@@ -1,0 +1,45 @@
+[versions]
+agp = "8.7.3"
+kotlin = "2.0.0"
+coreKtx = "1.15.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+lifecycleRuntimeKtx = "2.8.7"
+activityCompose = "1.9.3"
+composeBom = "2024.12.01"
+mozilla = "123.0"
+
+[libraries]
+# Existing libraries...
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+
+# Mozilla Components
+mozilla-concept-engine = { group = "org.mozilla.components", name = "concept-engine", version.ref = "mozilla" }
+mozilla-browser-engine-gecko = { group = "org.mozilla.components", name = "browser-engine-gecko", version.ref = "mozilla" }
+mozilla-concept-toolbar = { group = "org.mozilla.components", name = "concept-toolbar", version.ref = "mozilla" }
+mozilla-browser-domains = { group = "org.mozilla.components", name = "browser-domains", version.ref = "mozilla" }
+mozilla-feature-session = { group = "org.mozilla.components", name = "feature-session", version.ref = "mozilla" }
+mozilla-support-utils = { group = "org.mozilla.components", name = "support-utils", version.ref = "mozilla" }
+mozilla-browser-state = { group = "org.mozilla.components", name = "browser-state", version.ref = "mozilla" }
+mozilla-feature-tabs = { group = "org.mozilla.components", name = "feature-tabs", version.ref = "mozilla" }
+mozilla-support-ktx = { group = "org.mozilla.components", name = "support-ktx", version.ref = "mozilla" }
+mozilla-geckoview = { group = "org.mozilla.geckoview", name = "geckoview", version.ref = "mozilla" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
